@@ -1,0 +1,83 @@
+
+  "XBeesAir": {
+    "TokenUrl": "http://userauthapis.xbees.in/api/auth/generateToken", //done
+    "CreateOrderUrl": "http://api.shipmentmanifestation.xbees.in/shipmentmanifestation/forward",
+    "TrakCancelUrl": "http://xbclientapi.xbees.in/POSTShipmentService.svc/",
+    "username": "admin@bigship.com",
+    "password": "$bigship$",
+    "secratekey": "338aa33c45960a72468a205d7a41df5a5b1b7fd7f0e5dfd1de302f5acca2cf4f",
+    "XBkey": "iM9Dk6Gq2768UkfXZotyzbA",
+    "Bearer": "Bearer"
+  },
+
+  //Production
+  "XpressBeesHVS": {
+    "TokenUrl": "http://stageusermanagementapi.xbees.in/api/auth/generateToken", //done
+    "CreateOrderUrl": "http://api.staging.shipmentmanifestation.xbees.in/shipmentmanifestation/forward", // done
+    "TrakCancelUrl": "http://49.248.221.43:803/StandardForwardStagingService.svc/",
+    "username": "admin@bigshiphvs.com",
+    "password": "Admin@123",
+    "secratekey": "2562452107814e46d5a9924fe54615157ebca2b7e5788bbcb1fe8b144c29477e",
+    "XBkey": "TnWyGm91",
+    "Bearer": "Bearer"
+  },
+
+  "XpressBeesLight": {
+    "TokenUrl": "http://userauthapis.xbees.in/api/auth/generateToken", //done
+    "CreateOrderUrl": "http://api.shipmentmanifestation.xbees.in/shipmentmanifestation/forward", // done
+    "TrakCancelUrl": "http://xbclientapi.xbees.in/POSTShipmentService.svc/",
+    "username": "admin@bigshiptec.com",
+    "password": "$bigshiptec$",
+    "secratekey": "896f033bab9ffde6fa46582d95a584eab66af1a00932134a6ae6dc68aa547624",
+    "XBkey": "tgfyuk27245tgfyu",
+    "Bearer": "Bearer"
+  },
+ "XpressbeesLTL": {
+   "api_urls": {
+     "base_url": "http://49.248.221.43/StandardForwardStagingService.svc", // Staging
+     "manifest_url": "/AddCargoManifestDetails", // Staging
+     "tracking_url": "/CargoShipmentTracking", // Staging
+     "cancel_url": "/B2BCancellationCargoAWB" // Staging
+   },
+   "api_credentials": {
+     "XBKey": "XB123", //"Kaptor30643Hoptr",
+     "version": "v1"
+   },
+   "default_Values": {
+     "booking_mode_credit": "Credit",
+     "booking_mode_topay": "ToPay",
+     "route_mode_air": "Air",
+     "route_mode_surface": "Surface",
+     "updated_by": "Preeti",
+     "shipper_type": "Shipper address",
+     "consignee_type": "Consignee address",
+     "RTO_type": "RTO address",
+     "VTC_type": "VTC delivery address",
+     "weight_unit_kg": "KG",
+     "weight_unit_gram": "Gram",
+     "weight_unit_ton": "Ton",
+     "LBHUnit_cm": "CM",
+     "LBHUnit_meter": "Meter",
+     "owner_risk": "OR-Owner risk",
+     "carrier_risk": "CR-Carrier risk",
+     "non_commercial_risk": "NCV-Non Commercial Value",
+     "parent_type": "Parent",
+     "mps_type": "MPS",
+     "road_permit": "1",
+     "dc_copy": "1"
+   }
+ },
+
+
+public class XBRTOCancelOrderReqDTO
+{
+    public string AWBNumber { get; set; }
+    public string RTOReason { get; set; }
+    public string XBkey { get; set; }
+}
+
+{
+    "AWBNumber":"",
+    "RTOReason":"",
+    "XBkey":""
+}
